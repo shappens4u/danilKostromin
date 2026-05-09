@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Карта Детства — Поиск кружков и секций</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+</head>
+<body>
+    <header class="main-header">
+        <div class="container">
+            <div class="logo">КАРТА<span>ДЕТСТВА</span></div>
+            <div class="city-selector">
+                <span>Ваш город:</span>
+                <select id="citySelect">
+                    <option value="Находка">Находка</option>
+                    <option value="Владивосток">Владивосток</option>
+                    <option value="Москва">Москва</option>
+                </select>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero-search">
+        <div class="container">
+            <h1>Найдите путь развития вашего ребенка</h1>
+            <div class="filter-bar">
+                <div class="filter-item">
+                    <label>Возраст</label>
+                    <input type="number" id="ageInput" placeholder="лет" min="3" max="17">
+                </div>
+                <div class="filter-item">
+                    <label>Направление</label>
+                    <select id="typeSelect">
+                        <option value="all">Все направления</option>
+                        <option value="Спорт">Спорт</option>
+                        <option value="Творчество">Творчество</option>
+                        <option value="Наука">Наука</option>
+                    </select>
+                </div>
+                <button id="searchBtn" class="primary-btn">Найти кружки</button>
+            </div>
+        </div>
+    </section>
+
+    <main class="content container">
+        <div id="map" class="map-container"></div>
+        
+        <div class="results-header">
+            <h2 id="resultsCount">Доступные секции</h2>
+        </div>
+        
+        <section id="circlesGrid" class="cards-grid">
+            </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
