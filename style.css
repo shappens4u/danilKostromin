@@ -86,7 +86,7 @@ body {
 .card-footer { display: flex; justify-content: space-between; margin-top: 15px; font-weight: bold; font-size: 0.9rem; }
 .price { color: var(--secondary); }
 
-/* Адаптивность для смартфонов (п. 3.10) */
+/* Адаптивность */
 @media (max-width: 768px) {
     .filter-bar { flex-direction: column; }
     .hero-search { padding: 40px 0 80px; }
