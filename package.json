@@ -1,17 +1,20 @@
 {
-  "name": "karta-detstva",
-  "version": "1.0.0",
-  "description": "Гео-ориентированный маркетплейс дополнительного образования Карта детства",
+  "name": "childhood-map-nakhodka",
+  "version": "1.1.0",
+  "description": "Гео-ориентированный маркетплейс дополнительного образования Находка",
   "main": "script.js",
   "scripts": {
-    "start": "start index.html",
-    "test": "echo \"Ошибка: тесты не настроены\" && exit 1"
+    "start": "lite-server"
   },
   "keywords": [
     "marketplace",
-    "education",
-    "nakhodka"
+    "maps-api",
+    "nakhodka",
+    "education"
   ],
-  "author": "Студент",
-  "license": "ISC"
+  "author": "dan",
+  "license": "ISC",
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  }
 }
